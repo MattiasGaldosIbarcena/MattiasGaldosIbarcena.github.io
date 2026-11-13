@@ -1,1 +1,215 @@
-<h1>Hola, mi página funciona</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mattias Gabriel Galdos Ibárcena</title>
+<meta name="description" content="Mattias Gabriel Galdos Ibárcena, estudiante de Administración de Negocios con mención en Marketing en la UCSP.">
+<!-- Cuando tengas el logo, agrega aquí: <link rel="icon" href="NOMBRE_DEL_LOGO.png"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f1f3d;--navy2:#1a2f57;--crema:#f5efe0;--hueso:#fbf8f0;--oro:#b8923a;--oro2:#d6b25e;--txt:#1d2433;
+--serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'Figtree',system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--txt);background:var(--hueso);line-height:1.65;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--serif);line-height:1.2}
+h2{font-size:2rem;color:var(--navy);margin-bottom:22px;padding-bottom:10px;border-bottom:2px solid var(--oro)}
+h3{font-size:1.2rem;color:var(--navy);margin-bottom:6px}
+section{padding:60px 0}
+section:nth-of-type(even){background:var(--crema)}
+p+p{margin-top:12px}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;background:var(--navy);color:var(--hueso);text-decoration:none;font-weight:600;border:2px solid var(--navy);transition:background .2s,color .2s}
+.btn:hover{background:var(--oro);border-color:var(--oro);color:var(--navy)}
+.btn.oro{background:var(--oro);border-color:var(--oro);color:var(--navy)}
+.btn.oro:hover{background:var(--hueso);border-color:var(--hueso)}
+.link{color:var(--navy);font-weight:600;text-decoration-color:var(--oro);text-underline-offset:3px}
+/* Portada */
+header{background:linear-gradient(160deg,var(--navy),var(--navy2));color:var(--hueso);padding:64px 0 56px;text-align:center}
+.portada{display:flex;flex-direction:column;align-items:center;gap:22px}
+.uni{display:block;width:min(100%,420px);border-radius:14px;overflow:hidden;border:3px solid var(--oro);box-shadow:0 10px 30px rgba(0,0,0,.35);animation:entra 1s ease both}
+.uni img{display:block;width:100%;height:auto}
+header h1{font-size:clamp(2rem,6vw,3.4rem);animation:entra 1s .2s ease both}
+header p{max-width:560px;color:var(--oro2);font-size:1.1rem;animation:entra 1s .35s ease both}
+.acciones{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;animation:entra 1s .5s ease both}
+@keyframes entra{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+nav{background:var(--navy);border-top:1px solid var(--oro);position:sticky;top:0;z-index:5}
+nav .wrap{display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:center;padding:10px 22px}
+nav a{color:var(--crema);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--oro2)}
+/* Bloques */
+.item{border-left:4px solid var(--oro);padding:4px 0 4px 18px;margin-bottom:26px}
+.item small{color:#5b6477;display:block;margin-bottom:4px}
+.foto{margin:14px 0 0;max-width:420px;border:2px dashed var(--oro);border-radius:12px;min-height:170px;display:flex;align-items:center;justify-content:center;text-align:center;color:#6b7386;padding:16px;background:rgba(184,146,58,.08)}
+.foto img{display:block;width:100%;height:auto;border-radius:10px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.tags span{background:var(--navy);color:var(--hueso);padding:5px 14px;border-radius:999px;font-size:.92rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.lista{list-style:none}
+.lista li{padding:10px 0;border-bottom:1px solid rgba(15,31,61,.15)}
+footer{background:var(--navy);color:var(--crema);text-align:center;padding:26px 22px;font-size:.95rem}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap portada">
+    <a class="uni" href="https://ucsp.edu.pe" target="_blank" rel="noopener" aria-label="Ir al sitio de la Universidad Católica San Pablo">
+      <img src="a98f5028-8bad-4111-9c16-aca31f2888ac.jpeg" alt="Universidad Católica San Pablo">
+    </a>
+    <h1>Mattias Gabriel Galdos Ibárcena</h1>
+    <p>Estudiante de Administración de Negocios con mención en Marketing</p>
+    <div class="acciones">
+      <a class="btn oro" href="#contacto">Contacto</a>
+      <a class="btn" href="https://ucsp.edu.pe/carreras/administracion-negocios/?tab=institucional" target="_blank" rel="noopener">Conoce la carrera</a>
+    </div>
+  </div>
+</header>
+
+<nav aria-label="Secciones">
+  <div class="wrap">
+    <a href="#perfil">Perfil</a><a href="#educacion">Educación</a><a href="#experiencia">Experiencia y logros</a>
+    <a href="#intercambios">Intercambios</a><a href="#habilidades">Habilidades</a><a href="#metas">Metas</a>
+    <a href="#cursos">Cursos</a><a href="#companeros">Compañeros</a><a href="#redes">Redes</a>
+  </div>
+</nav>
+
+<main>
+
+<section id="perfil"><div class="wrap">
+  <h2>Perfil profesional</h2>
+  <p>Estudiante de Administración de Negocios con mención en Marketing en la Universidad Católica San Pablo, con formación en gestión comercial, análisis y liderazgo de equipos. Se caracteriza por su proactividad, su pensamiento innovador y su capacidad de adaptación a entornos cambiantes.</p>
+  <p>Su objetivo es desarrollarse en el ámbito del marketing y del emprendimiento propio, con la visión de consolidar una empresa constructora familiar complementada con la gestión de locales para eventos.</p>
+</div></section>
+
+<section id="educacion"><div class="wrap">
+  <h2>Educación</h2>
+  <div class="item">
+    <small>2025 – actualidad</small>
+    <h3>Universidad Católica San Pablo (UCSP)</h3>
+    <p>Administración de Negocios, mención en Marketing.</p>
+    <p><a class="link" href="https://ucsp.edu.pe" target="_blank" rel="noopener">Sitio de la universidad</a> · <a class="link" href="https://ucsp.edu.pe/carreras/administracion-negocios/?tab=institucional" target="_blank" rel="noopener">Página de la carrera</a></p>
+  </div>
+  <div class="item">
+    <small>2012 – 2024</small>
+    <h3>Colegio Anglo Americano Prescott</h3>
+    <p>Formación escolar completa con enfoque bilingüe. Rindió los exámenes del Bachillerato Internacional, que respaldan su nivel de inglés B2.</p>
+    <p><a class="link" href="https://www.prescott.edu.pe" target="_blank" rel="noopener">Sitio del colegio</a></p>
+  </div>
+</div></section>
+
+<section id="experiencia"><div class="wrap">
+  <h2>Experiencia y logros</h2>
+  <div class="item">
+    <small>2024</small>
+    <h3>Primer puesto en los Juegos Florales de danza grupal</h3>
+    <p>Integró un equipo de 8 estudiantes que obtuvo el primer lugar en la competencia de danza grupal del colegio.</p>
+    <!-- PARA AGREGAR LA FOTO: borra el div "foto" y escribe: <figure class="foto"><img src="NOMBRE_DE_LA_FOTO.jpg" alt="Juegos Florales 2024"></figure> -->
+    <div class="foto">Foto de los Juegos Florales (próximamente)</div>
+  </div>
+  <div class="item">
+    <small>2024</small>
+    <h3>Noche cultural</h3>
+    <p>Participó, junto a sus compañeros de promoción, en una presentación ganadora durante la noche cultural del colegio.</p>
+    <!-- PARA AGREGAR LA FOTO: <figure class="foto"><img src="NOMBRE_DE_LA_FOTO.jpg" alt="Noche cultural"></figure> -->
+    <div class="foto">Foto de la noche cultural (próximamente)</div>
+  </div>
+  <div class="item">
+    <small>Colegio Prescott</small>
+    <h3>Voluntariado en proyectos CAS (Creatividad, Actividad y Servicio)</h3>
+    <p>Participó en proyectos de servicio social en el Hogar de Niños Especiales San José Benito Cottolengo, en Tiabaya, desarrollando empatía, responsabilidad y trabajo colaborativo.</p>
+    <p><a class="link" href="https://www.facebook.com/cottolengoperu/?locale=es_LA" target="_blank" rel="noopener">Conoce el Cottolengo</a></p>
+  </div>
+</div></section>
+
+<section id="intercambios"><div class="wrap">
+  <h2>Intercambios</h2>
+  <div class="item">
+    <small>2023 · Orlando, Estados Unidos</small>
+    <h3>Orlando STEAM League (programa de coding)</h3>
+    <p>Programa de programación basado en el diseño de un parque de atracciones, aprobado con certificado. Incluyó mentorías con personal de Disney World en el backstage de todos sus parques.</p>
+    <p><a class="link" href="https://codingeducation.us/program/orlando-steam-league-2027/" target="_blank" rel="noopener">Sobre el programa</a></p>
+    <!-- PARA AGREGAR LA FOTO: <figure class="foto"><img src="NOMBRE_DE_LA_FOTO.jpg" alt="Orlando 2023"></figure> -->
+    <div class="foto">Foto de Orlando (próximamente)</div>
+  </div>
+  <div class="item">
+    <small>Enero – febrero de 2023 · Charlotte, Estados Unidos</small>
+    <h3>Charlotte Country Day School</h3>
+    <p>Intercambio escolar que fortaleció su dominio del inglés y su adaptación a un entorno académico y cultural distinto.</p>
+    <p><a class="link" href="https://www.charlottecountryday.org" target="_blank" rel="noopener">Sitio del colegio</a></p>
+    <!-- PARA AGREGAR LA FOTO: <figure class="foto"><img src="NOMBRE_DE_LA_FOTO.jpg" alt="Charlotte 2023"></figure> -->
+    <div class="foto">Foto de Charlotte (próximamente)</div>
+  </div>
+</div></section>
+
+<section id="habilidades"><div class="wrap">
+  <h2>Habilidades y competencias</h2>
+  <div class="cols">
+    <div>
+      <h3>Competencias personales</h3>
+      <div class="tags">
+        <span>Proactividad</span><span>Comunicación</span><span>Liderazgo</span><span>Gestión del tiempo</span><span>Organización</span><span>Resiliencia</span><span>Adaptación</span><span>Creatividad</span><span>Trabajo en equipo</span><span>Honestidad</span><span>Pensamiento innovador</span><span>Visión estratégica</span>
+      </div>
+    </div>
+    <div>
+      <h3>Competencias técnicas</h3>
+      <div class="tags">
+        <span>Ecosistema Microsoft</span><span>Word</span><span>Excel</span><span>PowerPoint</span><span>Google Drive</span><span>Google Slides</span><span>Canva</span><span>Scratch</span><span>CapCut</span>
+      </div>
+    </div>
+    <div>
+      <h3>Idiomas</h3>
+      <div class="tags"><span>Español nativo</span><span>Inglés B2</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="metas"><div class="wrap">
+  <h2>Metas profesionales</h2>
+  <p>Desarrollarse en el mundo del marketing y consolidar su propia empresa constructora de carácter familiar, con servicios complementarios como el alquiler de locales para eventos. Su enfoque combina visión de negocio, creatividad e innovación.</p>
+</div></section>
+
+<section id="cursos"><div class="wrap">
+  <h2>Cursos de la carrera y docentes</h2>
+  <p>Consulta los cursos del semestre 2026-2 y los docentes a cargo.</p>
+  <p style="margin-top:18px"><a class="btn" href="cursos.html" target="_blank" rel="noopener">Ver cursos y docentes</a></p>
+</div></section>
+
+<section id="companeros"><div class="wrap">
+  <h2>Páginas de compañeros</h2>
+  <ul class="lista">
+    <li><a class="link" href="https://nataliaortizdiezcanseco.github.io" target="_blank" rel="noopener">Natalia Ortiz Diez Canseco</a></li>
+    <li><a class="link" href="https://macarenaenriquez-oss.github.io/maca.github.io/" target="_blank" rel="noopener">Macarena Enriquez</a></li>
+    <li><a class="link" href="https://eduardosebastianfloressoto.github.io" target="_blank" rel="noopener">Eduardo Flores</a></li>
+  </ul>
+</div></section>
+
+<section id="redes"><div class="wrap">
+  <h2>Redes sociales</h2>
+  <div class="acciones" style="justify-content:flex-start;animation:none">
+    <a class="btn" href="https://www.instagram.com/mattias_galdos?psln=Z3d1c3hldnA2bW5l" target="_blank" rel="noopener">Instagram</a>
+    <a class="btn" href="https://www.facebook.com/share/1DskxYctXx/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+    <a class="btn" href="https://www.linkedin.com/in/matt%C3%ADas-gabriel-galdos-ib%C3%A1rcena-29b34744b?trk=contact-info" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</div></section>
+
+<section id="contacto"><div class="wrap">
+  <h2>Contacto</h2>
+  <ul class="lista">
+    <li>Correo institucional: <a class="link" href="mailto:mattias.galdos@ucsp.edu.pe">mattias.galdos@ucsp.edu.pe</a></li>
+    <li>Correo personal: <a class="link" href="mailto:mattigal2i@gmail.com">mattigal2i@gmail.com</a></li>
+  </ul>
+</div></section>
+
+</main>
+
+<footer>© 2026 Mattias Gabriel Galdos Ibárcena</footer>
+
+</body>
+</html>
